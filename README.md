@@ -1,0 +1,1 @@
+Practico - calculo de incognita de un triangulo
