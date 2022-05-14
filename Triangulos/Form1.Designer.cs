@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TxtRst = new System.Windows.Forms.TextBox();
-            this.Command2 = new System.Windows.Forms.Button();
+            this.CndSalir = new System.Windows.Forms.Button();
             this.BtnCalcular = new System.Windows.Forms.Button();
             this.Frame1 = new System.Windows.Forms.GroupBox();
             this.Check_a = new System.Windows.Forms.CheckBox();
@@ -69,23 +69,24 @@
             this.TxtRst.Size = new System.Drawing.Size(328, 306);
             this.TxtRst.TabIndex = 31;
             // 
-            // Command2
+            // CndSalir
             // 
-            this.Command2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Command2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Command2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Command2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Command2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Command2.Image = ((System.Drawing.Image)(resources.GetObject("Command2.Image")));
-            this.Command2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Command2.Location = new System.Drawing.Point(378, 342);
-            this.Command2.Name = "Command2";
-            this.Command2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Command2.Size = new System.Drawing.Size(95, 63);
-            this.Command2.TabIndex = 30;
-            this.Command2.Text = "Salir";
-            this.Command2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Command2.UseVisualStyleBackColor = false;
+            this.CndSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.CndSalir.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CndSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.CndSalir.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CndSalir.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CndSalir.Image = ((System.Drawing.Image)(resources.GetObject("CndSalir.Image")));
+            this.CndSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CndSalir.Location = new System.Drawing.Point(378, 342);
+            this.CndSalir.Name = "CndSalir";
+            this.CndSalir.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CndSalir.Size = new System.Drawing.Size(95, 63);
+            this.CndSalir.TabIndex = 30;
+            this.CndSalir.Text = "Salir";
+            this.CndSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.CndSalir.UseVisualStyleBackColor = false;
+            this.CndSalir.Click += new System.EventHandler(this.Command2_Click);
             // 
             // BtnCalcular
             // 
@@ -350,7 +351,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 417);
             this.Controls.Add(this.TxtRst);
-            this.Controls.Add(this.Command2);
+            this.Controls.Add(this.CndSalir);
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.Frame2);
             this.Controls.Add(this.label1);
@@ -371,7 +372,7 @@
         #endregion
 
         public System.Windows.Forms.TextBox TxtRst;
-        public System.Windows.Forms.Button Command2;
+        public System.Windows.Forms.Button CndSalir;
         public System.Windows.Forms.Button BtnCalcular;
         public System.Windows.Forms.GroupBox Frame1;
         public System.Windows.Forms.CheckBox Check_a;

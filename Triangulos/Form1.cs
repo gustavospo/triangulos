@@ -333,5 +333,11 @@ namespace Triangulos
                 CheckC.Checked = false;
             }
         }
+
+        private void Command2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }
